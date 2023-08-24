@@ -1,0 +1,375 @@
+/* Basic Styles */
+
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: #2e2f4266;
+	--grey: #2e2f42b2;
+	--white: #ffffff;
+	--dairy: #fcfcfc;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--slate);
+	background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.container {
+	max-width: 1158px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Hidden Elements */
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Header Section */
+
+.header-section {
+	border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container .list {
+	display: flex;
+	gap: 40px;
+}
+
+/* Logo */
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	line-height: 1.17;
+	color: var(--iris);
+	margin-right: 76px;
+}
+
+.logo-text-dark {
+	color: var(--navy-blue);
+}
+
+/* Navigation */
+
+.navigation-container {
+	display: flex;
+	align-items: center;
+}
+
+.navigation-link {
+	display: inline-block;
+	color: var(--navy-blue);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	padding: 24px 0;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+	color: var(--ocean);
+}
+
+/* Contacts */
+
+.contacts-container {
+	display: flex;
+	align-items: center;
+}
+
+.contacts-link {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--slate);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+	color: var(--ocean);
+}
+
+/* Hero Section */
+
+.hero-section {
+	background-color: var(--navy-blue);
+	padding: 188px 0;
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-section .page-title {
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--white);
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	margin-bottom: 48px;
+	max-width: 496px;
+}
+
+.hero-section .button {
+	align-self: center;
+}
+
+/* Buttons */
+
+.button {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	line-height: 1.5;
+	border-radius: 4px;
+}
+
+.button-primary {
+	background-color: var(--iris);
+	color: var(--white);
+	border: none;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	min-width: 169px;
+	height: 56px;
+}
+
+.button-secondary {
+	background-color: var(--cloud);
+	color: var(--iris);
+	border: 1px solid var(--cornflower);
+	padding: 12px 24px;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+	background-color: var(--ocean);
+	color: var(--white);
+	border: 1px solid transparent;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+		0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+	background-color: var(--ocean);
+}
+
+/* Titles */
+
+.section-title {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: var(--navy-blue);
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+}
+
+.list-item-title {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--navy-blue);
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
+/* Text */
+
+.list-item-text {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	font-size: 16px;
+	color: var(--slate);
+}
+
+/* Features Section */
+
+.features-section {
+	padding: 120px 0;
+}
+
+.features-container .list {
+	display: flex;
+	gap: 24px;
+}
+
+.features-container .list-item-title {
+	margin-bottom: 8px;
+}
+
+.features-container .list-item {
+	flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+/* Services Section */
+
+.services-section {
+	padding-bottom: 120px;
+}
+
+.services-container .list {
+	display: flex;
+	gap: 24px;
+}
+
+.services-container .section-title {
+	margin-bottom: 72px;
+}
+
+.services-container .list-item {
+	flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+/* Team Section */
+.team-section {
+	background-color: var(--cloud);
+	padding: 120px 0;
+}
+
+.team-container .list {
+	display: flex;
+	gap: 24px;
+}
+
+.team-container .section-title {
+	margin-bottom: 72px;
+}
+
+.team-container .list-item {
+	background-color: var(--white);
+	flex-basis: calc((100% - 3 * 24px) / 4);
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+		0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-container .list-item-content {
+	padding: 32px 0;
+}
+
+.team-container .list-item-title,
+.team-container .list-item-text {
+	text-align: center;
+}
+
+.team-container .list-item-title {
+	margin-bottom: 8px;
+}
+
+/* Footer */
+
+.footer-section {
+	background-color: var(--navy-blue);
+	padding: 100px 0;
+}
+
+.footer-container .logo {
+	color: var(--iris);
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.footer-container .logo-text-dark {
+	color: var(--cloud);
+}
+
+.footer-content {
+	max-width: 264px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--cloud);
+}
+
+/* Projects Section */
+
+.projects-section {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.filters-container {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 72px;
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
+.projects-list .list-item {
+	flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.projects-list .list-item-content {
+	border-left: 1px solid var(--cornflower);
+	border-right: 1px solid var(--cornflower);
+	border-bottom: 1px solid var(--cornflower);
+	padding: 32px 16px;
+}
+
+.projects-list .list-item-title {
+	margin-bottom: 8px;
+}
