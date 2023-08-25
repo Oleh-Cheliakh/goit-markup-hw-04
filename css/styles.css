@@ -318,6 +318,33 @@ img {
 	margin-bottom: 8px;
 }
 
+/* Customers section */
+
+.customers-section {
+	padding: 120px 0;
+}
+
+.customers-section .list {
+	display: flex;
+	justify-content: center;
+}
+
+.customers-section .list-item {
+	display: flex;
+	flex-basis: calc((100% - 5 * 24px) / 6);
+	padding: 16px 32px;
+	max-height: 88px;
+}
+
+.customers-section .list-item-image {
+	display: flex;
+	width: 100%;
+}
+
+.customers-section .section-title {
+	margin-bottom: 72px;
+}
+
 /* Footer */
 
 .footer-section {
