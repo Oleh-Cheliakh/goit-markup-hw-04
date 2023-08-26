@@ -319,6 +319,29 @@ img {
 	margin-bottom: 8px;
 }
 
+.team-container .list-item-card-links {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.team-container .card-link {
+	display: flex;
+
+	padding: 12px;
+	background-color: var(--iris);
+	border-radius: 50%;
+}
+
+.team-container .list-item-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.team-container .list-item-text {
+	margin-bottom: 8px;
+}
+
 /* Customers section */
 
 .customers-section {
