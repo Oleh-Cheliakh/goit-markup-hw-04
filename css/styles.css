@@ -24,6 +24,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
 	margin: 0;
 }
@@ -327,17 +328,19 @@ img {
 .customers-section .list {
 	display: flex;
 	justify-content: center;
+	gap: 24px;
 }
 
-.customers-section .list-item {
+.customers-section .list-item-link {
 	display: flex;
 	flex-basis: calc((100% - 5 * 24px) / 6);
 	padding: 16px 32px;
 	max-height: 88px;
+	border: 1px solid var(--light-slate);
+	border-radius: 4px;
 }
 
 .customers-section .list-item-image {
-	display: flex;
 	width: 100%;
 }
 
@@ -352,13 +355,21 @@ img {
 	padding: 100px 0;
 }
 
-.footer-container .logo {
+.footer-container {
+	display: flex;
+}
+
+.footer-info {
+	margin-right: 120px;
+}
+
+.footer-section .logo {
 	color: var(--iris);
 	display: inline-block;
 	margin-bottom: 16px;
 }
 
-.footer-container .logo-text-dark {
+.footer-section .logo-text-dark {
 	color: var(--cloud);
 }
 
@@ -367,6 +378,32 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--cloud);
+}
+
+.footer-social-links .list {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-social-links .list-item-icon {
+	width: 24px;
+	height: 24px;
+}
+
+.footer-social-links .list-item-link {
+	display: flex;
+	padding: 8px;
+	background-color: var(--iris);
+	border-radius: 50%;
+}
+
+.footer-links-header {
+	color: var(--white);
+	font-weight: 500;
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
 }
 
 /* Projects Section */
