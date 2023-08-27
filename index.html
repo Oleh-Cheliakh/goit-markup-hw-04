@@ -39,7 +39,7 @@
 					<ul class="list navigation-menu">
 						<li class="list-item"
 							><a
-								class="link navigation-link"
+								class="link navigation-link current"
 								href="./index.html"
 								>Studio</a
 							></li
@@ -87,10 +87,38 @@
 				<div class="container hero-container">
 					<h1 class="page-title">Effective solutions for your business</h1>
 					<button
+						data-modal-open
 						class="button button-primary"
 						type="button"
 						>Order Service</button
 					>
+				</div>
+				<div
+					data-modal
+					class="modal-backdrop is-hidden">
+					<dialog class="modal-form">
+						<button
+							data-modal-close
+							class="button-close">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="8"
+								height="8"
+								viewBox="0 0 8 8">
+								<g clip-path="url(#clip0_594180_150)">
+									<path
+										d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" />
+								</g>
+								<defs>
+									<clipPath id="clip0_594180_150">
+										<rect
+											width="8"
+											height="8" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</dialog>
 				</div>
 			</section>
 
@@ -100,32 +128,60 @@
 					<h2 class="section-title visually-hidden">Features</h2>
 					<ul class="list">
 						<li class="list-item">
-							<h3 class="list-item-title">Strategy</h3>
-							<p class="list-item-text"
-								>Our goal is to identify the business problem to walk away with
-								the perfect and creative solution.</p
-							>
+							<div class="list-item-image">
+								<svg class="list-item-icon">
+									<use href="./images/icons.svg#icon-antenna"></use>
+								</svg>
+							</div>
+							<div>
+								<h3 class="list-item-title">Strategy</h3>
+								<p class="list-item-text"
+									>Our goal is to identify the business problem to walk away
+									with the perfect and creative solution.</p
+								>
+							</div>
 						</li>
 						<li class="list-item">
-							<h3 class="list-item-title">Punctuality</h3>
-							<p class="list-item-text"
-								>Bring the key message to the brand's audience for the best
-								price within the shortest possible time.</p
-							>
+							<div class="list-item-image">
+								<svg class="list-item-icon">
+									<use href="./images/icons.svg#icon-clock"></use>
+								</svg>
+							</div>
+							<div>
+								<h3 class="list-item-title">Punctuality</h3>
+								<p class="list-item-text"
+									>Bring the key message to the brand's audience for the best
+									price within the shortest possible time.</p
+								>
+							</div>
 						</li>
 						<li class="list-item">
-							<h3 class="list-item-title">Diligence</h3>
-							<p class="list-item-text"
-								>Research and confirm brands that present the strongest digital
-								growth opportunities and minimize risk.</p
-							>
+							<div class="list-item-image">
+								<svg class="list-item-icon">
+									<use href="./images/icons.svg#icon-diagram"></use>
+								</svg>
+							</div>
+							<div>
+								<h3 class="list-item-title">Diligence</h3>
+								<p class="list-item-text"
+									>Research and confirm brands that present the strongest
+									digital growth opportunities and minimize risk.</p
+								>
+							</div>
 						</li>
 						<li class="list-item">
-							<h3 class="list-item-title">Technologies</h3>
-							<p class="list-item-text"
-								>Design practice focused on digital experiences. We bring forth
-								a deep passion for problem-solving.</p
-							>
+							<div class="list-item-image">
+								<svg class="list-item-icon">
+									<use href="./images/icons.svg#icon-astronaut"></use>
+								</svg>
+							</div>
+							<div>
+								<h3 class="list-item-title">Technologies</h3>
+								<p class="list-item-text"
+									>Design practice focused on digital experiences. We bring
+									forth a deep passion for problem-solving.</p
+								>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -487,5 +543,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
