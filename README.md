@@ -1,2 +1,2 @@
-**"Web Studio" two pages with styled blocks positioning**  
-[Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-03)
+**"Web Studio" with dialog window and transitions styles on social media icons**  
+[Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-04)
