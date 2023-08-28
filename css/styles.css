@@ -204,6 +204,11 @@ img {
 	right: 24px;
 }
 
+.modal-form .button-close-icon {
+	height: 8px;
+	width: 8px;
+}
+
 .is-hidden .modal-form {
 	transform: scale(0);
 }
@@ -431,6 +436,7 @@ img {
 	display: flex;
 	padding: 12px;
 	background-color: var(--iris);
+	fill: var(--cloud);
 	border-radius: 50%;
 	transition-property: background-color;
 }
@@ -532,6 +538,7 @@ img {
 	display: flex;
 	padding: 8px;
 	background-color: var(--iris);
+	fill: var(--cloud);
 	border-radius: 50%;
 	transition-property: background-color;
 }
