@@ -211,7 +211,7 @@ img {
 }
 
 .modal-form .button-close-icon {
-	transition: fill;
+	transition-property: fill;
 }
 
 .button-close:hover .button-close-icon,
@@ -474,11 +474,14 @@ img {
 	gap: 24px;
 }
 
+.customers-section .list-item {
+	flex-basis: calc((100% - 5 * 24px) / 6);
+}
+
 .customers-section .list-item-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-basis: calc((100% - 5 * 24px) / 6);
 	padding: 16px 32px;
 	max-height: 88px;
 	color: var(--light-slate);
