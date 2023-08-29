@@ -475,7 +475,7 @@ img {
 }
 
 .customers-section .list-item {
-	flex-basis: calc((100% - 5 * 24px) / 6);
+	width: calc((100% - 120px) / 6);
 }
 
 .customers-section .list-item-link {
